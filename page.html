@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .home {
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .header .nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+    }
+
+    .header .nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .btn-primary {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 32px;
+        gap: 10px;
+        width: 128px;
+        height: 52px;
+        background: #4CAF4F;
+        border-radius: 4px;
+        flex: none;
+        order: 1;
+        border: 0px;
+        flex-grow: 0;
+    }
+
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 2rem;
+        background-color: #ffffff;
+    }
+
+    .hero-text {
+        max-width: 50%;
+        width: 657px;
+        height: 152px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        margin-left: 150px;
+        color: #4D4D4D;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Features Section */
+    .features {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 2rem;
+        background-color: #f1f1f1;
+        gap: 2rem;
+    }
+
+    .feature {
+        flex: 1;
+        height: 260px;
+        width: 300px;
+        background-color: #fff;
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 32px;
+        gap: 8px;
+
+        margin: 0 auto;
+        width: 299px;
+        height: 260px;
+
+        /* Neutral/White */
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(171, 190, 209, 0.2);
+        border-radius: 8px;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+    }
+
+    .feature h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature p {
+        color: #555;
+    }
+
+    /* Footer Section */
+    .footer {
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .log {
+        margin-left: 450px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 10px;
+        width: 77px;
+        height: 40px;
+        color: #4CAF4F;
+        background-color: #F5F7FA;
+        border-radius: 6px;
+        font-size: 20px;
+        flex: none;
+        border: 0;
+        flex-grow: 0;
+
+    }
+</style>
+
+<body>
+    <div class="home">
+        <header class="header">
+            <div class="logo">Nexcent</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="Login"><button class="log">login</button></div>
+            <button class="btn-primary">Sign up</button>
+
+        </header>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Lessons and insights from 8 years</h1>
+                <p>Where to grow your business as a photographer: site or social media?</p>
+                <button class="btn-primary">Register</button>
+            </div>
+            <div class="hero-image">
+                <img src="img/Illustration.png" alt="Hero Image">
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h2>Membership Organisations</h2>
+                <p> Our membership management software provides full automation of membership renewals and payments</p>
+            </div>
+            <div class="feature">
+                <h2>National Associations</h2>
+                <p>Our membership management software provides full automation of membership renewals and payments.</p>
+            </div>
+            <div class="feature">
+                <h2>Clubs And Groups</h2>
+                <p> Our membership management software provides full automation of membership renewals and payments</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p> Company
+                Support
+                Stay up to date
+                Copyright © 2020 Nexcent ltd.
+                About us
+                Help center
+                Your email address
+                All rights reserved
+                Blog
+                Terms of service
+                Contact us
+                Legal
+                Pricing
+                Privacy policy
+                Testimonials
+                Status</p>
+        </footer>
+    </div>
+</body>
+
+</html>
